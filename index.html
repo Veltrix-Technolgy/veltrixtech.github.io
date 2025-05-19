@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Veltrix Tech</title>
+  <title>Veltrix Technology</title>
+  <link rel="icon" href="./img/logo-sm.jpg" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans">
 
   <!-- Header -->
-  <header class="flex justify-between items-center px-6 py-4" style="background-color: #111723;">
+  <header class="flex justify-between items-center px-20 py-4 fixed items-center left-0 right-0" style="background-color: #111723;">
     <!-- Logo dan Nama -->
-    <div class="flex items-center space-x-3">
+    <a href="./index.html">
+        <div class="flex items-center space-x-3">
       <img src="./img/logo-lg.png" alt="Veltrix Tech Logo" class="h-10 w-auto" />
-      <h1 class="text-2xl font-bold text-white">Veltrix Tech</h1>
+      <h1 class="text-2xl font-bold text-white">Veltrix Technology</h1>
     </div>
+    </a>
 
     <!-- Navigasi -->
     <nav class="space-x-6 text-gray-300">
@@ -24,48 +27,64 @@
     </nav>
   </header>
 
+  <div class="flex justify-between items-center px-6 py-4"></div>
+
   <!-- Hero -->
-  <section class="text-center py-20 px-6 bg-gray-900">
-    <h2 class="text-4xl font-bold mb-4">Innovating Future Software</h2>
-    <p class="text-lg text-gray-400">We build, we code, we deliver.</p>
-    <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">Explore Projects</a>
+  <section class="text-center py-20 px-6 bg-white">
+    <h2 class="text-4xl font-bold mb-4 text-gray-900">Innovating Future Software</h2>
+    <p class="text-lg text-gray-700">We build, we code, we deliver.</p>
+    <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Explore Projects</a>
   </section>
 
   <!-- About -->
   <section id="about" class="px-6 py-16" style="background-color: #111723;">
-    <h3 class="text-3xl font-bold mb-4">About Us</h3>
-    <p class="text-gray-400 max-w-3xl">
-      Veltrix Tech is a software development team founded by Kamil and Arnold. We focus on crafting high-quality software solutions, from web platforms to system-level tools.
-    </p>
+    <h3 class="text-3xl font-bold mb-8 text-center text-white">Our Team</h3>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+        
+      <!-- Arnold -->
+      <div class="text-center text-white">
+        <img src="https://avatars.githubusercontent.com/u/78660014" alt="Arnold" class="w-28 h-28 rounded-full mx-auto mb-4 border-2 border-blue-500" />
+        <h4 class="text-xl font-semibold">Arnold</h4>
+        <a href="https://github.com/arnoldsiaa" class="text-blue-400 hover:underline">@arnoldsiaa</a>
+      </div>
+      <!-- Kamil -->
+      <div class="text-center text-white">
+        <img src="https://avatars.githubusercontent.com/u/42912095" alt="Kamil" class="w-28 h-28 rounded-full mx-auto mb-4 border-2 border-blue-500" />
+        <h4 class="text-xl font-semibold">Kamil</h4>
+        <a href="https://github.com/lenovix" class="text-blue-400 hover:underline">@lenovix</a>
+      </div>
+
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="px-6 py-16">
-    <h3 class="text-3xl font-bold mb-8">Our Projects</h3>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-1">Kamil Browser</h4>
-        <p class="text-gray-400 mb-2">A custom browser project using Chromium.</p>
-        <a href="https://github.com/veltrixtech/kamil-browser" class="text-blue-400 hover:underline">View on GitHub</a>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-1">CoreBankingApp</h4>
-        <p class="text-gray-400 mb-2">Local core banking system prototype.</p>
-        <a href="https://github.com/veltrixtech/corebankingapp" class="text-blue-400 hover:underline">View on GitHub</a>
-      </div>
+  <section id="projects" class="px-6 py-16 bg-white">
+    <h3 class="text-3xl font-bold mb-8 text-center text-gray-900">Our Projects</h3>
+    <div class="text-center text-gray-700">
+      <p class="mb-2">We're currently working on some exciting stuff.</p>
+      <p class="italic">Projects will be listed here soon. Stay tuned!</p>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="px-6 py-16" style="background-color: #111723;">
-    <h3 class="text-3xl font-bold mb-4">Get in Touch</h3>
+    <h3 class="text-3xl font-bold mb-4 text-white">Get in Touch</h3>
     <p class="text-gray-400 mb-4">Interested in collaborating or joining us?</p>
-    <!-- <p>Email: <a href="mailto:contact@veltrix.tech" class="text-blue-400 hover:underline">contact@veltrix.tech</a></p> -->
-    <p>GitHub: <a href="https://github.com/Veltrix-Technolgy" class="text-blue-400 hover:underline">@Veltrix-Technolgy</a></p>
+    
+    <div class="flex items-center space-x-2">
+      <!-- GitHub Logo SVG -->
+      <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill-rule="evenodd"
+          d="M12 0C5.373 0 0 5.373 0 12a12 12 0 008.21 11.387c.6.111.82-.261.82-.58v-2.033c-3.338.726-4.033-1.61-4.033-1.61-.547-1.389-1.335-1.759-1.335-1.759-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.808 1.304 3.492.996.108-.775.42-1.305.763-1.605-2.665-.305-5.466-1.334-5.466-5.933 0-1.31.469-2.381 1.237-3.221-.124-.304-.536-1.526.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.403c1.02.005 2.047.137 3.003.403 2.29-1.552 3.296-1.23 3.296-1.23.655 1.65.243 2.872.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.805 5.624-5.475 5.921.431.372.816 1.102.816 2.222v3.293c0 .321.218.694.825.576A12 12 0 0024 12c0-6.627-5.373-12-12-12z"
+          clip-rule="evenodd" />
+      </svg>
+      <!-- Link GitHub -->
+      <a href="https://github.com/Veltrix-Technolgy" class="text-blue-400 hover:underline">@Veltrix-Technolgy</a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center text-sm py-4 bg-gray-900 border-t border-gray-700">
+  <footer class="text-center text-sm py-4 bg-white border-t border-gray-300 text-gray-600">
     © Veltrix Tech 2025 · All rights reserved.
   </footer>
 
