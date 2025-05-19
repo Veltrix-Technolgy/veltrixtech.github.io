@@ -7,27 +7,34 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
+
   <!-- Header -->
-  <header class="flex justify-between items-center px-6 py-4 bg-gray-800">
-    <h1 class="text-2xl font-bold">Veltrix Tech</h1>
-    <nav class="space-x-4">
-      <a href="#about" class="hover:underline">About</a>
-      <a href="#projects" class="hover:underline">Projects</a>
-      <a href="#contact" class="hover:underline">Contact</a>
+  <header class="flex justify-between items-center px-6 py-4" style="background-color: #111723;">
+    <!-- Logo dan Nama -->
+    <div class="flex items-center space-x-3">
+      <img src="./img/logo-lg.png" alt="Veltrix Tech Logo" class="h-10 w-auto" />
+      <h1 class="text-2xl font-bold text-white">Veltrix Tech</h1>
+    </div>
+
+    <!-- Navigasi -->
+    <nav class="space-x-6 text-gray-300">
+      <a href="#about" class="hover:text-white transition">About</a>
+      <a href="#projects" class="hover:text-white transition">Projects</a>
+      <a href="#contact" class="hover:text-white transition">Contact</a>
     </nav>
   </header>
 
   <!-- Hero -->
-  <section class="text-center py-20 px-6">
+  <section class="text-center py-20 px-6 bg-gray-900">
     <h2 class="text-4xl font-bold mb-4">Innovating Future Software</h2>
-    <p class="text-lg text-gray-300">We build, we code, we deliver.</p>
-    <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded hover:bg-blue-700">Explore Projects</a>
+    <p class="text-lg text-gray-400">We build, we code, we deliver.</p>
+    <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">Explore Projects</a>
   </section>
 
   <!-- About -->
-  <section id="about" class="px-6 py-16 bg-gray-800">
+  <section id="about" class="px-6 py-16" style="background-color: #111723;">
     <h3 class="text-3xl font-bold mb-4">About Us</h3>
-    <p class="text-gray-300 max-w-3xl">
+    <p class="text-gray-400 max-w-3xl">
       Veltrix Tech is a software development team founded by Kamil and Arnold. We focus on crafting high-quality software solutions, from web platforms to system-level tools.
     </p>
   </section>
@@ -36,30 +43,31 @@
   <section id="projects" class="px-6 py-16">
     <h3 class="text-3xl font-bold mb-8">Our Projects</h3>
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-gray-800 p-4 rounded">
-        <h4 class="text-xl font-semibold">Kamil Browser</h4>
-        <p class="text-gray-400">A custom browser project using Chromium.</p>
-        <a href="https://github.com/veltrixtech/kamil-browser" class="text-blue-500 hover:underline">View on GitHub</a>
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-1">Kamil Browser</h4>
+        <p class="text-gray-400 mb-2">A custom browser project using Chromium.</p>
+        <a href="https://github.com/veltrixtech/kamil-browser" class="text-blue-400 hover:underline">View on GitHub</a>
       </div>
-      <div class="bg-gray-800 p-4 rounded">
-        <h4 class="text-xl font-semibold">CoreBankingApp</h4>
-        <p class="text-gray-400">Local core banking system prototype.</p>
-        <a href="https://github.com/veltrixtech/corebankingapp" class="text-blue-500 hover:underline">View on GitHub</a>
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-1">CoreBankingApp</h4>
+        <p class="text-gray-400 mb-2">Local core banking system prototype.</p>
+        <a href="https://github.com/veltrixtech/corebankingapp" class="text-blue-400 hover:underline">View on GitHub</a>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="px-6 py-16 bg-gray-800">
+  <section id="contact" class="px-6 py-16" style="background-color: #111723;">
     <h3 class="text-3xl font-bold mb-4">Get in Touch</h3>
-    <p class="text-gray-300 mb-4">Interested in collaborating or joining us?</p>
-    <p>Email: <a href="mailto:contact@veltrix.tech" class="text-blue-400 hover:underline">contact@veltrix.tech</a></p>
-    <p>GitHub: <a href="https://github.com/veltrixtech" class="text-blue-400 hover:underline">@veltrixtech</a></p>
+    <p class="text-gray-400 mb-4">Interested in collaborating or joining us?</p>
+    <!-- <p>Email: <a href="mailto:contact@veltrix.tech" class="text-blue-400 hover:underline">contact@veltrix.tech</a></p> -->
+    <p>GitHub: <a href="https://github.com/Veltrix-Technolgy" class="text-blue-400 hover:underline">@Veltrix-Technolgy</a></p>
   </section>
 
   <!-- Footer -->
   <footer class="text-center text-sm py-4 bg-gray-900 border-t border-gray-700">
     © Veltrix Tech 2025 · All rights reserved.
   </footer>
+
 </body>
 </html>
